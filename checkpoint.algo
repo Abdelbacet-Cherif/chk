@@ -1,0 +1,28 @@
+ALGORITHM checkpoint
+ VAR
+   sentence : STRING := "";
+   NumberWords : INTEGER := 1;
+   NumberVowels : INTEGER := 0;
+   vowels := (a,e,o,u,i,y)
+ 
+ BEGIN
+ write (sentence);
+ Read (sentence);
+ FOR i FROM 0 TO Phrase.length-1  DO
+   
+        IF (sentence [i] == " ") THEN
+            NumberWords +=1
+           
+        END_IF
+        IF
+        (sentence [i] == vowels)THEN
+        NumberVowels +=1;
+    
+        END_IF
+       
+    END_FOR
+     
+  write ("the sentence length:"sentence.length);
+  write ("the words numbers:" NumberWords);
+  write ("the vowels numbers:" NumberVowels);
+ END
